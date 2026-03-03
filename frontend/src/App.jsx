@@ -9,12 +9,14 @@ import Development from './pages/Development';
 import ThinkPrompts from './pages/ThinkPrompts';
 import TodoList from './pages/TodoList';
 import Notes from './pages/Notes';
+import Login from './pages/Login';
 
 function App() {
     return (
         <BrowserRouter>
             <DataProvider>
                 <Routes>
+                    <Route path="/login" element={<Login />} />
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Dashboard />} />
                         <Route path="mood" element={<MoodTracker />} />
