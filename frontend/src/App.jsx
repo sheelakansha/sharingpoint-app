@@ -9,16 +9,16 @@ import Development from './pages/Development';
 import ThinkPrompts from './pages/ThinkPrompts';
 import TodoList from './pages/TodoList';
 import Notes from './pages/Notes';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Auth from './pages/Auth';
 
 function App() {
     return (
         <BrowserRouter>
             <DataProvider>
                 <Routes>
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/login" element={<Auth />} />
+                    <Route path="/signup" element={<Auth />} />
+                    <Route path="/auth" element={<Auth />} />
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Dashboard />} />
                         <Route path="mood" element={<MoodTracker />} />
