@@ -24,6 +24,18 @@ app.post('/api/login', (req, res) => {
     }
 });
 
+// Signup endpoint
+app.post('/api/signup', (req, res) => {
+    const { fullName, email, password } = req.body;
+
+    // TODO: Replace with actual database user creation
+    if (fullName && email && password) {
+        res.status(201).json({ success: true, message: 'User created successfully', token: 'dummy-token-123' });
+    } else {
+        res.status(400).json({ success: false, message: 'Full Name, Email, and Password are required' });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server starting on port ${PORT}`);
 });

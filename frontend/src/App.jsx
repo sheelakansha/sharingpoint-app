@@ -10,6 +10,7 @@ import ThinkPrompts from './pages/ThinkPrompts';
 import TodoList from './pages/TodoList';
 import Notes from './pages/Notes';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <DataProvider>
                 <Routes>
                     <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<Signup />} />
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Dashboard />} />
                         <Route path="mood" element={<MoodTracker />} />
