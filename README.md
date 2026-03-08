@@ -2,6 +2,9 @@
 
 A personal productivity and self-reflection dashboard built with React and Vite. It provides an intuitive interface for managing your daily tasks, analyzing your mood, setting goals, and tracking your personal development—all wrapped in a sleek iOS-inspired dark theme.
 
+### 🌐 Live Demo
+The application is live and can be accessed at: **[https://sharingpoint-dashboard.vercel.app](https://sharingpoint-dashboard.vercel.app)**
+
 ## Features
 
 - **Dashboard:** A central hub displaying a quick overview of your mood, goals, tasks, and recent insights.
