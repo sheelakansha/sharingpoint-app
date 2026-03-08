@@ -32,6 +32,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                             <li key={item.path}>
                                 <NavLink
                                     to={item.path}
+                                    end={item.path === '/dashboard'}
                                     className={({ isActive }) =>
                                         `flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${isActive
                                             ? 'bg-zinc-800/50 text-purple-700'
