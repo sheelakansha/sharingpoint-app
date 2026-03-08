@@ -8,13 +8,13 @@ const Navbar = ({ onMenuClick }) => {
     // Determine the title based on the current path
     const getPageTitle = () => {
         const path = location.pathname;
-        if (path === '/') return 'Dashboard';
-        if (path === '/mood') return 'Mood Tracker';
-        if (path === '/goals') return 'Goals';
-        if (path === '/development') return 'Development';
-        if (path === '/thinking') return 'Think Prompts';
-        if (path === '/todo') return 'To-Do';
-        if (path === '/notes') return 'Notes';
+        if (path === '/dashboard') return 'Dashboard';
+        if (path === '/dashboard/mood') return 'Mood Tracker';
+        if (path === '/dashboard/goals') return 'Goals';
+        if (path === '/dashboard/development') return 'Development';
+        if (path === '/dashboard/thinking') return 'Think Prompts';
+        if (path === '/dashboard/todo') return 'To-Do';
+        if (path === '/dashboard/notes') return 'Notes';
         return 'Overview';
     };
 

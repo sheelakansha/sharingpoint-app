@@ -4,13 +4,13 @@ import { LayoutDashboard, Smile, Target, TrendingUp, Lightbulb, CheckSquare, Fil
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
     const navItems = [
-        { path: '/', label: 'Dashboard', icon: LayoutDashboard },
-        { path: '/mood', label: 'Mood Tracker', icon: Smile },
-        { path: '/goals', label: 'Goals', icon: Target },
-        { path: '/development', label: 'Development', icon: TrendingUp },
-        { path: '/thinking', label: 'Think Prompts', icon: Lightbulb },
-        { path: '/todo', label: 'To-Do', icon: CheckSquare },
-        { path: '/notes', label: 'Notes', icon: FileText },
+        { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+        { path: '/dashboard/mood', label: 'Mood Tracker', icon: Smile },
+        { path: '/dashboard/goals', label: 'Goals', icon: Target },
+        { path: '/dashboard/development', label: 'Development', icon: TrendingUp },
+        { path: '/dashboard/thinking', label: 'Think Prompts', icon: Lightbulb },
+        { path: '/dashboard/todo', label: 'To-Do', icon: CheckSquare },
+        { path: '/dashboard/notes', label: 'Notes', icon: FileText },
     ];
 
     return (

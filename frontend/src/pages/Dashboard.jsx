@@ -28,7 +28,7 @@ const Dashboard = () => {
     const sections = [
         {
             title: "Mood Tracker",
-            link: "/mood",
+            link: "/dashboard/mood",
             color: "bg-zinc-800/50 text-zinc-300",
             icon: <Smile size={24} />,
             content: latestMood ? (
@@ -42,7 +42,7 @@ const Dashboard = () => {
         },
         {
             title: "Active Goals",
-            link: "/goals",
+            link: "/dashboard/goals",
             color: "bg-zinc-800/50 text-white",
             icon: <Target size={24} />,
             content: (
@@ -57,7 +57,7 @@ const Dashboard = () => {
         },
         {
             title: "To-Do List",
-            link: "/todo",
+            link: "/dashboard/todo",
             color: "bg-emerald-900/30 text-emerald-600",
             icon: <CheckCircle size={24} />,
             content: (
@@ -69,7 +69,7 @@ const Dashboard = () => {
         },
         {
             title: "Development",
-            link: "/development",
+            link: "/dashboard/development",
             color: "bg-amber-900/30 text-amber-600",
             icon: <TrendingUp size={24} />,
             content: (
@@ -136,7 +136,7 @@ const Dashboard = () => {
                             <div>
                                 <p className="text-lg font-medium mb-4">"The unexamined life is not worth living."</p>
                                 <Link
-                                    to="/thinking"
+                                    to="/dashboard/thinking"
                                     className="inline-flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-zinc-800/50 transition-colors"
                                 >
                                     Start Thinking
@@ -153,7 +153,7 @@ const Dashboard = () => {
                             <Activity size={20} className="text-zinc-100" />
                             Up Next
                         </h3>
-                        <Link to="/todo" className="text-xs font-semibold text-white hover:text-purple-700">View All</Link>
+                        <Link to="/dashboard/todo" className="text-xs font-semibold text-white hover:text-purple-700">View All</Link>
                     </div>
 
                     <div className="space-y-3">
