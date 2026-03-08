@@ -36,7 +36,7 @@ const Auth = () => {
         const data = await response.json();
         if (data.success) {
             // localStorage.setItem('token', data.token);
-            navigate('/');
+            navigate('/dashboard');
         } else {
             setError(data.message || 'Login failed');
         }
@@ -56,7 +56,7 @@ const Auth = () => {
         const data = await response.json();
         if (response.ok && data.success) {
             // localStorage.setItem('token', data.token);
-            navigate('/');
+            navigate('/dashboard');
         } else {
             setError(data.message || 'Signup failed');
         }
